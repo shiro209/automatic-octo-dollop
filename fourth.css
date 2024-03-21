@@ -1,0 +1,95 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+ --Off-white: hsl(0, 0%, 94%);
+ --Light-grey: hsl(0, 0%, 86%);
+ --Smokey-grey: hsl(0, 1%, 44%);
+ --Off-black: hsl(0, 0%, 8%);
+ --Purple: hsl(259, 100%, 65%);
+ --Light-red: hsl(0, 100%, 67%);
+}
+
+@font-face {
+  font-family: pop;
+  src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+*{
+  font-family: pop !important;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--Off-white);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  
+  background-color: var(--White);
+  padding: 30px;
+  width: 500px;
+  max-width: 100%;
+  border-radius: 5%;
+  border-bottom-right-radius: 30%;
+  position: relative;
+}
+
+input{
+  width:70px;
+  height:50px;
+  padding: 5px;
+  font-size: 20px;
+  
+  border: solid 0.2px;
+ 
+}
+
+:focus{
+  outline-style: none;
+  box-shadow: none;
+}
+
+button{
+  background-color: var(--Purple);
+  position: absolute;
+  right: 5%;
+  top: 33%;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+button:hover{
+  background-color: black;
+}
+
+small{
+  color: var(--Light-red);
+  position: absolute;
+  top: 27%;
+}
+  
+.output span{
+  font-size: 3rem;
+  color: var(--Purple);
+}
+
+h1{
+  font-style: italic;
+}
+
+.inputF{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+
+}
